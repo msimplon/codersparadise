@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import co.simplon.codersparadizeapi.dtos.BookThumb;
-import co.simplon.codersparadizeapi.entities.Book;
 import co.simplon.codersparadizeapi.services.BookService;
 
 @RestController

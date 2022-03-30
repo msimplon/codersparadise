@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import co.simplon.codersparadizeapi.dtos.BookThumb;
-import co.simplon.codersparadizeapi.entities.Book;
 import co.simplon.codersparadizeapi.repositories.BookRepository;
 
 @Service
