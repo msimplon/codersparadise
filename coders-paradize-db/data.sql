@@ -1,5 +1,5 @@
 /*
- * psql -h localhost -p 5432 -U postgres -d codersparadise
+ * psql -h localhost -p 5432 -U postgres -d codersparadize
  * \i data.sql
  * \q
  */
