@@ -2,7 +2,32 @@ img {
   width: 200px;
   height: 60x;
 }
-.panier {
+.panier,
+.panier-hidden {
   width: 60px;
   height: 60px;
+}
+.nav {
+  border-bottom: 1px solid #000;
+  min-width: 370px;
+}
+ul {
+  margin-left: 2em;
+}
+a {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 576px) {
+  .panier {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .panier-hidden {
+    display: none;
+    width: 60px;
+    height: 60px;
+  }
 }
