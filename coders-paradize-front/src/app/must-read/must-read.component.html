@@ -1,3 +1,11 @@
-<div *ngFor="let item of books">
-  {{item.title}}
+<div class="books-layout row">
+  <div class="book-cover"></div>
+  <div class="book-card" *ngFor="let item of books">
+    <div><img src="assets/img/covers/{{item.cover}}" alt="" width="75px" height="100px"></div>
+    <div class="book-infos">
+      <div>{{item.title}}</div>
+      <div>{{item.price | currency : '€'}}</div>
+      <a href="#">Description</a>
+    </div>
+  </div>
 </div>
