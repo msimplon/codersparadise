@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MustReadComponent implements OnInit {
 
+  books!: any[];
   constructor() { }
 
-  ngOnInit(): void {
+   ngOnInit(): void {
+    fetch("http://localhost:8080/books")
+    .then((datas) => datas.json())
+      .then((response) => {
+        console.log(response);
+        this.books = response
+      });
   }
 
 }
